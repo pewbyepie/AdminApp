@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('./img/zdj.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -2;
+  }
+
+  .small-container {
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 25rem;
+    height: 27rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  
+    .admin-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      h1 {
+        text-align: center;
+        margin:10px 0px 20px;
+        color:#ffffff;
+      }
+  
+      #email,
+      #password {
+        margin-top: 0.5rem;
+        padding: 1rem;
+        height: 40px;
+        margin-bottom: 20px;
+        border: 1px solid rgb(243, 236, 224);
+        width: 100%;
+        background-color: transparent;
+        border-radius: 20px;
+        text-align: center;
+        color: rgb(243, 236, 224);
+        transition:box-shadow .5s ease;
+        &::placeholder {
+          color: rgb(196, 194, 192);
+        }
+        &:focus {
+          box-shadow: 0px 0px 10px black;
+        }
+      }
+      .form-footer {
+        text-align: center;
+  
+        #login-submit {
+          height: 40px;
+          border-radius: 20px;
+          padding: 0px 50px;
+          color: rgb(243, 236, 224);
+          background-color: #36506B;
+          border:none;
+          cursor: pointer;
+          transition: box-shadow .5s ease;
+    
+          &:hover {
+            box-shadow: 0px 0px 10px black;
+          }
+        }
+      }
+  
+    }
+  }
+  
+  .contain-table {
+    display: flex;
+    flex-direction: column;
+    color: rgb(243, 236, 224);
+    padding: 2rem;
+    line-height: 2rem;
+  
+    button {
+      font-size: 1rem;
+      font-weight: 1rem;
+      letter-spacing: 1px;
+      padding: 1rem;
+      outline: 0;
+      border: 1px solid black;
+      margin-top: 1rem;
+      cursor: pointer;
+      position: relative;
+      background-color: transparent;
+      color: rgb(243, 236, 224);
+  
+      &:hover {
+        background-color:rgb(71, 71, 71);
+      }
+      }
+    }
+  
+  .container {
+    text-align: center;
+  
+    h1 {
+      margin-top: 2rem;
+      padding: 1rem;
+      color: rgb(243, 236, 224);
+    }
+  
+    .parent-input {
+      text-align: center;
+  
+      .inputSub,
+      .muted-button {
+      font-size: 1rem;
+      font-weight: 1rem;
+      letter-spacing: 1px;
+      padding: 1rem;
+      outline: 0;
+      border: 1px solid rgb(243, 236, 224);
+      border-radius: 2rem;
+      margin: 1rem;
+      cursor: pointer;
+      position: relative;
+      background-color: transparent;
+      color: rgb(243, 236, 224);
+  
+      &:hover {
+        background-color:rgb(71, 71, 71);
+    }
+      }
+    }
+  }
+  
+  .small-container-3,
+   .small-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    form {
+      border-radius: 1.5rem;
+      width: 25rem;
+      height: 20rem;
+      position: fixed;
+      z-index: 1;
+  
+      h1 {
+        color: rgb(243, 236, 224);
+      }
+  
+      #firstName,
+      #lastName,
+      #email,
+      #salary,
+      #date {
+        margin-top: 0.5rem;
+        padding: 1rem;
+        height: 40px;
+        margin-bottom: 20px;
+        border:1px solid #ffffff;
+        width: 100%;
+        background-color: transparent;
+        border-radius: 20px;
+        text-align: center;
+        color:#ffffff;
+        transition:box-shadow .5s ease;
+  
+        &:focus {
+          box-shadow: 0px 0px 10px black;
+        }
+        &::placeholder {
+          color: rgba(243, 236, 224, 0.712);
+        }
+      }
+      .parent-input {
+        text-align: center;
+  
+        .inputSub,
+        .muted-button {
+        font-size: 1rem;
+        font-weight: 1rem;
+        letter-spacing: 1px;
+        padding: 1rem;
+        outline: 0;
+        border: 1px solid rgb(243, 236, 224);
+        border-radius: 2rem;
+        margin: 1rem;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        color: rgb(243, 236, 224);
+  
+        &:hover {
+          background-color:rgb(71, 71, 71);
+      }
+        }
+      }
+    }
+  }
+}
+
